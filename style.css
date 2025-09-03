@@ -60,6 +60,27 @@
             color: var(--premium-gold);
         }
 
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 5px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-btn.active, .nav-btn:hover {
+            background: var(--cornell-red);
+        }
+
         /* Top Offer Banner */
         .top-offer {
             background: linear-gradient(90deg, var(--cornell-red) 0%, #b30000 100%);
@@ -444,6 +465,15 @@
             100% { transform: rotate(360deg); }
         }
 
+        /* Page Sections */
+        .page-section {
+            display: block;
+        }
+
+        .page-section.hidden {
+            display: none;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .website-name {
@@ -460,5 +490,10 @@
             
             .search-box, .price-range {
                 width: 100%;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 10px;
             }
         }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI MOBILE & GADGETS</title>
+    <title>AL MOBILE & GADGETS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +14,12 @@
             <img src="images/logo2.png" alt="AI MOBILE & GADGETS Logo" class="logo-img">
             <h1 class="website-name">AI <span>MOBILE</span> & GADGETS</h1>
         </div>
+        
+        <nav>
+            <button class="nav-btn active" id="mobile-btn">Mobiles</button>
+            <button class="nav-btn" id="gadget-btn">Gadgets</button>
+        </nav>
+        
         <div class="facebook-link">
             <a href="https://www.facebook.com/profile.php?id=61551797297515" target="_blank" aria-label="Facebook page">
                 <i class="fab fa-facebook-f" style="color: white; font-size: 24px;"></i>
@@ -21,31 +27,64 @@
         </div>
     </header>
 
-    <!-- Top Offer Banner - Will be updated dynamically -->
-    <div class="top-offer" id="top-offer">
-        Loading latest offers...
-    </div>
+    <!-- Mobiles Page -->
+    <section id="mobiles-page" class="page-section">
+        <!-- Top Offer Banner - Will be updated dynamically -->
+        <div class="top-offer" id="mobile-top-offer">
+            Loading latest mobile offers...
+        </div>
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <div class="search-container">
-            <div class="search-box">
-                <input type="text" id="search-input" placeholder="Search by model name...">
-            </div>
-            <div class="price-range">
-                <h3>Filter by Price:</h3>
-                <input type="range" id="price-filter" min="0" max="219999" step="1000" value="219999">
-                <div class="range-values">
-                    <span>BDT 0</span>
-                    <span id="price-value">BDT 219999</span>
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="mobile-search-input" placeholder="Search mobile by model name...">
+                </div>
+                <div class="price-range">
+                    <h3>Filter by Price:</h3>
+                    <input type="range" id="mobile-price-filter" min="0" max="219999" step="50" value="219999">
+                    <div class="range-values">
+                        <span>BDT 0</span>
+                        <span id="mobile-price-value">BDT 219999</span>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-grid" id="mobiles-container">
+            <div class="loader" id="mobile-loader"></div>
+        </section>
     </section>
 
-    <!-- Products Grid -->
-    <section class="products-grid" id="products-container">
-        <div class="loader" id="loader"></div>
+    <!-- Gadgets Page -->
+    <section id="gadgets-page" class="page-section hidden">
+        <!-- Top Offer Banner - Will be updated dynamically -->
+        <div class="top-offer" id="gadget-top-offer">
+            Loading latest gadget offers...
+        </div>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="gadget-search-input" placeholder="Search gadget by name...">
+                </div>
+                <div class="price-range">
+                    <h3>Filter by Price:</h3>
+                    <input type="range" id="gadget-price-filter" min="0" max="50000" step="500" value="50000">
+                    <div class="range-values">
+                        <span>BDT 0</span>
+                        <span id="gadget-price-value">BDT 50000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-grid" id="gadgets-container">
+            <div class="loader" id="gadget-loader"></div>
+        </section>
     </section>
 
     <!-- Modal for product details -->
