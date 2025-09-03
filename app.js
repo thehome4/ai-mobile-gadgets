@@ -13,7 +13,7 @@
         const loader = document.getElementById('loader');
 
         // Google Sheets CSV URL (Replace with your published CSV URL)
-        const csvURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRwF05YIG41phB0HiD_vVa7Qu3I7L-vgHV8RpU-c_gOMNaoB6NgpdUP5gUlFCB6zW2Fd6mLr-sbr-yT/pub?gid=0&single=true&output=csv';
+        const csvURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vScZbq3GriEA40sbk7OdqERizzA3-_FGZ0Wmn1sGBY_tzx0cImOO7tegyRRLWJ1iNIGD_HEGBbGm5Yd/pub?gid=0&single=true&output=csv';
 
         // Sample data for demonstration (will be replaced with CSV data)
         let products = [];
