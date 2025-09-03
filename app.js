@@ -245,7 +245,7 @@
             
             // Update WhatsApp link with product info
             const message = `Hello! I'm interested in the ${product.model} (${product.discount}% off)`;
-            whatsappBtn.href = `https://wa.me/01640820472?text=${encodeURIComponent(message)}`;
+            whatsappBtn.href = `https://wa.me/8801640820472?text=${encodeURIComponent(message)}`;
             
             // Show modal
             modal.style.display = 'flex';
