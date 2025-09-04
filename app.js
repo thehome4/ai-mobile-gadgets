@@ -291,7 +291,7 @@
             // Update banner
             const productName = topProduct.model || topProduct.name;
             bannerElement.innerHTML = 
-                `<i class="fa-solid fa-gift"></i> Highest Offer: <span>${topProduct.discount}% OFF</span> on ${productName}! Limited Time Offer! <i class="fa-solid fa-gift"></i>`;
+                ` &#127881 Highest Offer: <span>${topProduct.discount}% OFF</span> on ${productName}! Limited Time Offer! &#127881`;
         }
 
         // Display products
